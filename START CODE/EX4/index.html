@@ -1,1 +1,108 @@
-<!-- Write your code here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            background-color: black;
+        }
+
+        tr
+        {
+            font-size: 25px;
+            
+        }
+        th
+        {
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        td
+        {
+            padding: 10px;
+            background-color: white;
+        }
+        h2
+        {
+            font-size: 40px;
+        }
+        .icon
+        {
+            text-align: center;
+
+        }
+        
+        img
+        {
+            width: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        #imageContainer
+        {
+            padding: 0;
+
+        }
+
+        .image
+        {
+            width: 40px;
+            padding-left: 25px;
+        }
+        #mouse
+        {
+            width: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Welcome to CADT Shop!</h2>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>In stock</th>
+            <th>Image</th>
+        </tr>
+            <td class="name">C# Book</td>
+            <td>$10</td>
+            <td>5</td>
+            <td class="icon">✅</td>
+            <td id="imageContainer">
+                <div class="image">
+                    <img src="./asset/C.png" alt="">
+                </div>
+            </td>
+            
+        <tr>
+            <td class="name">CADT Polo</td>
+            <td>$12</td>
+            <td>60</td>
+            <td class="icon">✅</td>
+            <td id="imageContainer">
+                <div class="image">
+                    <img src="./asset/cadtPolo.png" alt="">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="name">CADT Mouse</td>
+            <td>$100</td>
+            <td>3</td>
+            <td class="icon">❌</td>
+            <td id="imageContainer">
+                <div class="image">
+                    <img src="./asset/mouse.png" alt="" id="mouse">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
