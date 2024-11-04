@@ -1,0 +1,25 @@
+body
+{
+    display: flex;
+    justify-content: center;
+}
+
+button
+{
+    background-color: rgb(250, 131, 205);
+    border: 4px solid rgb(216, 114, 179);
+    color: white;
+    width: 150px;
+    height: 70px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: rgb(173, 87, 141);
+    border: 4px solid rgb(110, 54, 89);
+}
