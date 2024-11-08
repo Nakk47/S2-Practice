@@ -6,12 +6,13 @@ body {
 }
 
 
+
 h1
 {
     font-weight: 100;
     text-align: center;
+    margin-top: 100px;
     margin-bottom: 100px;
-    margin-top: 90px;
     font-size: 50px;
     margin-left: 0;
     margin-right: 0;
@@ -20,10 +21,10 @@ h1
 
 .pricing-container
 {
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     gap: 4em;
 }
@@ -46,9 +47,6 @@ h1
     transform: translate(5px, -10px);
     box-shadow: -7px 10px 3px #857b74;
 }
-
-
-
 
 
 .plan-features
