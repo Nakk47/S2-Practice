@@ -1,11 +1,16 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
+  height: 100vh;
 }
 
 .card-container {
  
   margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 0.5fr);
+  grid-template-rows: repeat(2, 0.5fr);
+  gap: 1em;
 }
  
 .card {
@@ -41,4 +46,9 @@ body {
   cursor: pointer;
 }
 
+.span2
+{
+  grid-column: span 2;
+  grid-row: span 1;
+}
  
