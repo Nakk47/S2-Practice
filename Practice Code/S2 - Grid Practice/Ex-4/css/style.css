@@ -1,0 +1,425 @@
+body
+{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    margin: 0;
+    font-family: "Sono", sans-serif;
+
+}
+
+.left-nav
+{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    padding: 1em;
+    gap: 9vh;
+}
+
+.dashboard-header
+{
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px dashed black;
+}
+
+.item-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.item
+{
+    text-decoration: none;
+}
+
+.home, .dashboard, .my-progress, .my-reminder, .setting
+{
+    font-size: 23px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border: 0;
+    background: none;
+    gap: 1em;
+    cursor: pointer;
+}
+
+.home:hover, .dashboard:hover, .my-progress:hover, .my-reminder:hover, .setting:hover
+{
+    background-color: rgb(233, 233, 233);
+    border: 1px solid black;
+}
+
+.icons
+{
+    width: 35px;
+}
+
+.bottom-left-nav
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 250px;
+    background-color: #fffae6;
+    align-items: center;
+
+}
+
+.bottom-left-header
+{
+    font-size: 17px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-bottom: 1px dashed black;
+    padding-bottom: 12.5px;
+}
+
+.bottom-left-description
+{
+    font-size: 12.5px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.click-me
+{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 2.5em;
+    border-radius: 5px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.click-me:hover
+{
+    background-color: rgb(48, 48, 48);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.middle-nav
+{
+    background-color: #fff0e6;
+    grid-column: span 4;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 1em;
+}
+
+.box
+{
+    background-color: white;
+}
+
+.search
+{
+    grid-column: span 6;
+    border-bottom: 1px solid black;
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+}
+
+.search-bar
+{
+    border: none;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+.search-bar:focus
+{
+    outline: none;
+
+}
+
+.search-icon
+{
+    width: 50px;
+
+}
+
+
+.header
+{
+    grid-column: span 6;
+    grid-row: span 2;
+}
+.data-list
+{
+    grid-column: span 3;
+    grid-row: span 6;
+}
+.data-bar-chart
+{
+    grid-column: span 3;
+    grid-row: span 6;
+}
+
+.course-header
+{
+    grid-column: span 6;
+    border: 0;
+    background-color: #fff0e6;
+}
+.course-header > p
+{
+    font-size: 20px;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+
+.course
+{
+    grid-column: span 2;
+    grid-row: span 2;
+    transition: 0.25s;
+}
+
+.english, .chinese, .spanish
+{
+
+    background-color: #d3f2fe;
+    padding: 5px;
+    margin: 0;
+}
+
+.course-topic
+{
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.course-description
+{
+    font-size: 12.5px;
+    padding: 5px;
+    margin: 0;
+}
+
+.course:hover
+{
+    transform: translate(5px, -10px);
+    box-shadow: -7px 10px 0px black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.right-nav
+{
+    grid-column: 2 span;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    gap: 1em;
+    border-left: 1px solid black;
+    background-color: #d3f2fe;
+}
+
+.user
+{
+    height: 100px;
+}
+
+.user-icon
+{
+    align-self: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.header-right-nav
+{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 5%;
+    gap: 1em;
+}
+
+.header-right-nav > p
+{
+    font-size: 30px;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+}
+
+#log-out
+{
+    width: 120px;
+    height: 100%;
+    background-color: black;
+    border: none;
+    font-size: 17.5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+#log-out:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+.name
+{
+    justify-self: center;
+    margin: 0;
+    font-size: 25px;
+}
+
+.work
+{
+    justify-self: center;
+    font-size: 17px;
+    color: gray;
+}
+
+.progress
+{
+    border-top: 1px dashed black;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.progress > p
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.rectangle
+{
+    width: 70%;
+    height: 20px;
+    align-self: center;
+    background-color: #fed233;
+    border-radius: 0.4em;
+    font-size: 12.5px;
+    border: 1px solid black;
+}
+
+.rectangle > p
+{
+    float: right;
+    margin: 2px;
+    margin-right: 5px;
+}
+
+.progress-a, .progress-b, .progress-c
+{
+    border: 1px solid black;
+    height: 70px;
+    border-radius: 0.5em;
+    display: flex;
+    gap: 2em;
+    background-color: white;
+    cursor: pointer;
+}
+
+.progress-a:hover, .progress-b:hover, .progress-c:hover, .reminder-1:hover, .reminder-2:hover
+{
+    background-color: #f0f0f0;
+}
+
+.course-name
+{
+    align-self: center;
+    margin-left: 1em;
+}
+
+.reminder
+{
+    border-top: 1px dashed black;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    gap: 1em;
+}
+
+.reminder > p
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.symbol
+{
+    align-self: center;
+    /* margin-left: 1em; */
+    height: 100%;
+    width: 70px;
+    border-right: 2px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.reminder-1, .reminder-2
+{
+    border: 1px solid black;
+    height: 70px;
+    border-radius: 0.5em;
+    display: flex;
+    gap: 2em;
+    background-color: white;
+    cursor: pointer;
+}
+
+.reminder-lable
+{
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+}
