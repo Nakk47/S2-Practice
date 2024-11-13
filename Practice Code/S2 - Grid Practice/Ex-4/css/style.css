@@ -182,11 +182,12 @@ body
 
 .skill-header
 {
-    font-size: 20px;
+    font-size: 22.5px;
     margin: 0;
     padding-bottom: 0.5em;
     width: 100%;
     border-bottom: 1px solid lightgrey;
+    font-weight: bold;
 }
 
 .skill-set-container
@@ -198,12 +199,66 @@ body
     height: 80%;
 }
 
-.speaking > p, .vocabulary > p, .listening > p
+.speaking, .vocabulary, .listening
 {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1em;
+    align-items: center;
 }
+
+
+.speaking > p
+{
+    width: 20%;
+    padding-left: 0.5em;
+}
+
+.vocabulary > p
+{
+    padding-left: 0.5em;
+
+    width: 20%;
+
+}
+
+.listening > p
+{
+    padding-left: 0.5em;
+
+    width: 20%;
+}
+
+
+.vocabulary
+{
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.5em;
+}
+
+
+
+
+.level
+{
+    width: 50%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #fed233;
+}
+
+.percent
+{
+    width: 5%;
+    text-align: center;
+    border-left: 1px dashed black;
+}
+
+
 
 
 .data-bar-chart
