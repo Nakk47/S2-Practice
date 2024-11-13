@@ -261,11 +261,57 @@ body
 
 
 
-.data-bar-chart
+.goal
 {
     grid-column: span 4;
     grid-row: span 3;
+    background-color: #fffae6;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
+
+.goal-header
+{
+    font-weight: bold;
+    font-size: 22.5px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 0.5em;
+    margin: 0;
+}
+
+.goal-description
+{
+    font-size: 15px;
+    margin-bottom: 2em;
+}
+
+.edit-button
+{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+
+.edit-button:hover
+{
+    background-color: rgb(48, 48, 48);
+}
+
+.edit-button-container
+{
+    justify-self: center;
+    align-self: center;
+}
+
 
 .course-header
 {
