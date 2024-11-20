@@ -31,8 +31,9 @@ menu
     height: 80px;
     grid-row: 1;
     grid-column: 2/5;
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
     gap: 10px;
   }
 
@@ -51,6 +52,8 @@ button
   color: white;
   background-color: #5F3DC4;
   border: 0;
+  width: 100px;
+
 }
 
 .trash
