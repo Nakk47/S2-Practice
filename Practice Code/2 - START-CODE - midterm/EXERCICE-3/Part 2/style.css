@@ -1,0 +1,79 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: sans-serif;
+    color: #cacaca;
+    font-size: 24px;
+    height: 100vh;
+    text-align: center;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px;
+    grid-template-rows: 80px 1fr;
+
+  }
+
+nav
+  {
+    background-color: #343a40;
+    grid-row: 1/3;
+    width: 80px;
+  }
+
+menu
+  {
+    background-color: #7048e8;
+    height: 80px;
+    grid-row: 1;
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+  }
+
+section
+{
+  color: black;
+  display: flex;
+  overflow: scroll;
+  background-color: #e9ecef;
+  flex-direction: column;
+  gap: 40px;
+}
+
+button
+{
+  color: white;
+  background-color: #5F3DC4;
+  border: 0;
+}
+
+.trash
+{
+  background-color: #d6336c;
+}
+
+.email
+{
+  margin: 0 40px 0 40px;
+  background-color: #adb5bd;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+main
+{
+  color: black;
+}
+
+aside
+{
+  background-color: #e9ecef;
+  color: black;
+}
+
