@@ -35,6 +35,7 @@ menu
     padding: 10px;
     flex-direction: row;
     gap: 10px;
+    justify-content: space-between;
   }
 
 section

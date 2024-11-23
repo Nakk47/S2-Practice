@@ -1,0 +1,621 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#container
+{
+    box-shadow: 0 1px 6px rgb(82, 82, 82);
+}
+
+@media (width > 1300px)
+{
+    #file
+    {
+    padding: 0;
+    }
+
+    #container
+    {
+        width: 45%;
+        height: 95%;
+        background-color: white;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    /* header */
+    #header
+    {
+        border-bottom: 1px solid lightgray;
+        border-radius: 1em 1em 0em 0em;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    /* body */
+    #body
+    {
+        height: 100%;
+        padding: 1em;
+    }
+    
+    form
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        height: 100%;
+        gap: 1em;
+    }
+    
+    label
+    {
+        color: #13bb93;
+    }
+    
+    .form-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    input, select
+    {
+        height: 2em;
+    }
+    
+    input
+    {
+        padding: 10px;
+    }
+    
+    #email-container
+    {
+        grid-column: span 2;
+    }
+    
+    
+    
+    #gender
+    {
+        display: flex;
+        gap: 1em;
+    }
+    
+    #male, #female
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        
+    }
+    
+    #male > input, #female > input
+    {
+        margin: 0;
+    }
+    
+    #male > label, #female > label
+    {
+        color: black;
+    }
+    
+    #income
+    {
+        padding: 0;
+    }
+    
+    #hobbies
+    {
+        display: flex;
+        gap: 1em;
+    }
+    
+    #music, #sport, #travel, #movies
+    {
+        display: flex;
+        gap: 6px;
+    }
+    
+    #music > input, #sport > input, #travel > input, #movies > input
+    {
+        margin: 0;
+    }
+    
+    #music > label, #sport > label, #travel > label, #movies > label
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+    
+    #input-range
+    {
+        display: flex;
+        gap: 1em;
+    }
+    
+    #income
+    {
+        width: 85%;
+    }
+    
+    #income-index
+    {
+        font-size: 15px;
+        background-color: #13bb93;
+        height: 100%;
+        width: 15%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    
+
+    #bio-container
+    {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    #bio-text-area
+    {
+        height: 100%;
+    }
+    
+    
+    /* footer */
+    #footer
+    {
+        border-top: 1px solid lightgray;
+        border-radius: 0em 0em 1em 1em;
+        height: 10vh;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    #create-button
+    {    width: 15%;
+        height: 55%;
+        border-radius: 5px;
+        background-color: #13bb93;
+        color: white;
+        font-weight: bold;
+        font-size: 100%;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    #create-button:hover{
+        background-color: #13bb93;
+    }
+}
+
+@media (width < 1300px)
+{
+    #file
+    {
+        padding: 0;
+    }
+    
+    
+    #container
+    {
+        width: 55%;
+        height: 90%;
+        margin: 2em;
+        background-color: white;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    /* header */
+    #header
+    {
+        border-bottom: 1px solid lightgray;
+        border-radius: 1em 1em 0em 0em;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+        font-size: 10px;
+    }
+    
+    /* body */
+    #body
+    {
+        height: 100%;
+        padding: 1em;
+        overflow-y: scroll;
+    }
+    
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 1em;
+    }
+    
+    label
+    {
+        font-size: 12.5px;
+        color: #13bb93;
+    }
+    
+    .form-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: span 2;
+
+        gap: 5px;
+    }
+    
+    input, select
+    {
+        height: 2em;
+        width: 100%;
+    }
+    
+    input
+    {
+        padding: 10px;
+    }
+    
+    
+    #gender
+    {
+        display: flex;
+        gap: 1em;
+    }
+    
+    #male, #female
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        
+    }
+    
+    #male > input, #female > input
+    {
+        margin: 0;
+    }
+    
+    #male > label, #female > label
+    {
+        color: black;
+    }
+    
+    #income
+    {
+        padding: 0;
+    }
+    
+    #hobbies
+    {
+        display: flex;
+        gap: 1em;
+    }
+    
+    #music, #sport, #travel, #movies
+    {
+        display: flex;
+        gap: 6px;
+    }
+    
+    #music > input, #sport > input, #travel > input, #movies > input
+    {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    
+    #music > label, #sport > label, #travel > label, #movies > label
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+    
+    #input-range
+    {
+        display: flex;
+        gap: 1em;
+    }
+    
+    #income
+    {
+        width: 85%;
+    }
+    
+    #income-index
+    {
+        font-size: 15px;
+        background-color: #13bb93;
+        height: 100%;
+        width: 15%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    #bio-container
+    {
+        height: 1000px;
+    }
+    
+    #bio-text-area
+    {
+        height: 100%;
+        margin-bottom: 1em;
+    }
+    
+    
+    /* footer */
+    #footer
+    {
+        border-top: 1px solid lightgray;
+        border-radius: 0em 0em 1em 1em;
+        height: 10vh;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    #create-button
+    {   
+        width: 15%;
+        height: 55%;
+        border-radius: 5px;
+        background-color: #13bb93;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5vh;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    #create-button:hover{
+        background-color: #13bb93;
+    }
+}
+
+@media (width < 750px)
+{
+    #file
+    {
+        padding: 0;
+    }
+    
+    
+    #container
+    {
+        width: 90%;
+        height: 90%;
+        margin: 1em;
+        background-color: white;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    /* header */
+    #header
+    {
+        border-bottom: 1px solid lightgray;
+        border-radius: 1em 1em 0em 0em;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+        font-size: 10px;
+    }
+    
+    /* body */
+    #body
+    {
+        height: 100%;
+        padding: 1em;
+        overflow-y: scroll;
+    }
+    
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 1em;
+    }
+    
+    label
+    {
+        font-size: 12.5px;
+        color: #13bb93;
+    }
+    
+    .form-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: span 2;
+
+        gap: 5px;
+    }
+    
+    input, select
+    {
+        height: 2em;
+        width: 100%;
+    }
+    
+    input
+    {
+        padding: 10px;
+    }
+    
+    
+    #gender
+    {
+        display: flex;
+        gap: 1em;
+    }
+    
+    #male, #female
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        
+    }
+    
+    #male > input, #female > input
+    {
+        margin: 0;
+    }
+    
+    #male > label, #female > label
+    {
+        color: black;
+    }
+    
+    #income
+    {
+        padding: 0;
+    }
+    
+    #hobbies
+    {
+        display: flex;
+        gap: 1em;
+    }
+    
+    #music, #sport, #travel, #movies
+    {
+        display: flex;
+        gap: 6px;
+    }
+    
+    #music > input, #sport > input, #travel > input, #movies > input
+    {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    
+    #music > label, #sport > label, #travel > label, #movies > label
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+    
+    #input-range
+    {
+        display: flex;
+        gap: 1em;
+    }
+    
+    #income
+    {
+        width: 85%;
+    }
+    
+    #income-index
+    {
+        font-size: 15px;
+        background-color: #13bb93;
+        height: 100%;
+        width: 15%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    #bio-container
+    {
+        height: 1000px;
+    }
+    
+    #bio-text-area
+    {
+        height: 100%;
+        margin-bottom: 1em;
+    }
+    
+    
+    /* footer */
+    #footer
+    {
+        border-top: 1px solid lightgray;
+        border-radius: 0em 0em 1em 1em;
+        height: 10vh;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    #create-button
+    {   
+        width: 15%;
+        height: 55%;
+        border-radius: 5px;
+        background-color: #13bb93;
+        color: white;
+        font-weight: bold;
+        font-size: 1.25vh;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    #create-button:hover{
+        background-color: #13bb93;
+    }
+}
+
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Practice</title>
+</head>
+<body>
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Header -->
+        <div id="header">
+            <h1>Create Account</h1>
+        </div>
+
+        <!-- body -->
+        <div id="body">
+            
+            <!-- form -->
+            <form action="#">
+                <div class="form-container" id="first-name-container">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="frist-name" placeholder="Enter your first name">
+                </div>
+                
+                <div class="form-container" id="last-name-container">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name">
+                </div>
+
+                <div class="form-container" id="email-container">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-container" id="password-container">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+
+                <div class="form-container" id="confirm-passowrd-container">
+                    <label for="confirm-passowrd">Confirm Password*</label>
+                    <input type="password" id="confirm-passowrd" placeholder="Enter your password again">
+                </div>
+
+                <div class="form-container" id="gender-container">
+                    <label for="gender">Gender</label>
+                    <div id="gender">
+                        <div id="male">
+                            <input type="radio" name="gender" id="radio1">
+                            <label for="radio1">Male</label>
+                        </div>
+
+                        <div id="female">
+                            <input type="radio" name="gender" id="radio2">
+                            <label for="radio1">Female</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-container" id="hobbies-container">
+
+                    <label for="hobbies">Hobbies</label>
+                    <div id="hobbies">
+                        <div id="music">
+                            <input type="checkbox" name="hobbies" id="hobbies1">
+                            <label for="music">Music</label>
+                        </div>
+                        
+                        <div id="sport">
+                            <input type="checkbox" name="hobbies" id="hobbies1">
+                            <label for="sport">Stort</label>
+                        </div>
+    
+                        <div id="travel">
+                            <input type="checkbox" name="hobbies" id="hobbies1">
+                            <label for="travel">Travel</label>
+                        </div>
+    
+                        <div id="movies">
+                            <input type="checkbox" name="hobbies" id="hobbies1">
+                            <label for="movie">Movies</label>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="form-container" id="income-source-container">
+                    <label for="income-source">Source of income</label>
+                    <select name="income" id="income-source">
+                        <option value="select">Choose Your Option</option>
+                        <option value="CEO">CEO</option>
+                        <option value="cyber-security">Cyber Security</option>
+                        <option value="data-scientist">Data Scientist</option>
+                        <option value="employee">Employee</option>
+                        <option value="student">Student</option>
+                        <option value="web-developer">Web Developer</option>
+                    </select>
+                </div>
+
+                <div class="form-container" id="income-container">
+                    <label for="income">Income</label>
+                    <div id="input-range">
+                        <input type="range" id="income" min="100" max="5001" value="100" oninput="updateValue(this.value)">
+                        <h1 id="income-index">$100</h1>
+                    </div>
+                </div>
+
+                <div class="form-container" id="file-container">
+                    <label for="file">Upload Profile Picture</label>
+                    <input type="file" id="file">
+                </div>
+
+                <div class="form-container" id="age-container">
+                    <label for="age">Age</label>
+                    <input type="text" id="age">
+                </div>
+                
+                <div class="form-container" id="bio-container">
+                    <label for="bio">Bio</label>
+                    <textarea name="bio" id="bio-text-area"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <input type="submit" value="Create" id="create-button">
+        </div>
+    </div>
+
+
+
+    <script>
+        let output = document.getElementById("income-index");
+    
+        function updateValue(value)
+        {
+            if (value > 5000)
+            {
+                output.textContent = "$" + 5 + "K+";
+            }
+            else
+            {
+                output.textContent = "$" + value;
+            }
+        }
+    
+    </script>
+</body>
+
+
+</html>
